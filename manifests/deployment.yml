@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: aksimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aksimage
+  template:
+    metadata:
+      labels:
+        app: aksimage 
+    spec:
+      containers:
+        - name: aksimage 
+          image: mubingirach.azurecr.io/aksimage
+          ports:
+          - containerPort: 5000
