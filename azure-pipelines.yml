@@ -19,7 +19,10 @@ variables:
   imagePullSecret: 'mubingirach50b1-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+ pool:
+  name: selfhostedpool
+  demands:
+   - agent.name -equals instance-20210317-1006
 
 
 stages:
