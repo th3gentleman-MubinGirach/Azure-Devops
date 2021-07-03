@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN yum install python3
+RUN yum -y install python3
 COPY requirements.txt /usr/src/app/
 RUN pip3 install /usr/src/app/requirements.txt
 COPY main.py /usr/src/app/
