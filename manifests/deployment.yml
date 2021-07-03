@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: askimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: askimage
+  template:
+    metadata:
+      labels:
+        app: askimage 
+    spec:
+      containers:
+        - name: askimage 
+          image: mubingirach.azurecr.io/askimage
+          ports:
+          - containerPort: 5000
