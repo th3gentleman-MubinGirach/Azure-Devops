@@ -17,7 +17,7 @@ spec:
         image: mubingirach.azurecr.io/aksimage
         imagePullPolicy: Always
         ports:
-        - containerPort: 3322
+        - containerPort: 5000
 # service type loadbalancer       
 ---
 apiVersion: v1
@@ -29,6 +29,6 @@ spec:
     app: python-app
   ports:
     - protocol: TCP
-      port: 3322
-      targetPort: 3322
+      port: 5000
+      targetPort: 5000
   type: LoadBalancer
