@@ -9,12 +9,12 @@
 </ul>
 
 <h2> The work flow of the project is as follows </h2>
-<ol>
+<p><ol>
 <li>TERRAFORM [Provisioning ACR & AKS on Azure cloud] </li>|
                                                            |----> <li> Azure Pipeline [Fetch the repository from Github]</li> -----> <li>Generate yaml file</li> |
                                                                                                                                                                  |
                                                                                                               <li>Build & Push container image to ACR</li> <-----|
                                                                                                                  |    
-                                   <li> Deploy container image to AKS [Containing Flask based Web-app]</li><-----|     </ol>
+                                   <li> Deploy container image to AKS [Containing Flask based Web-app]</li><-----|     </ol></p>
                                    
-<b> For Reference Video<a href="https://www.linkedin.com/posts/mubingirach_devops-kubernetes-azure-activity-6817158160659304448-blZt">Click here</a>
+<b> For Reference Video <a href="https://www.linkedin.com/posts/mubingirach_devops-kubernetes-azure-activity-6817158160659304448-blZt">Click here</a>
